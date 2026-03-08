@@ -3,58 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alissen Moreno | Home</title>
+    <title>Alissen Moreno | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Alissen Moreno</h1>
-        <p>Computer Science Graduate Student | Lecturer | Researcher</p>
-    </header>
-
     <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="research.html">Research</a>
-        <a href="contact.html">Contact</a>
+        <div class="nav-container">
+            <div class="logo">Alissen Moreno</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Alissen Moreno. I am a Computer Science graduate student at UTRGV
-                with experience in teaching, student support, research, and software projects.
-                My interests include machine learning, graph theory, brain network analysis,
-                and creating projects that connect technology with real-world problems.
-            </p>
-        </section>
+    <section class="hero">
+        <h1>Computer Science Graduate Student, Lecturer, and Researcher</h1>
+        <h2>Focused on machine learning, brain networks, and building meaningful software</h2>
+        <p>
+            Hi, I’m Alissen Moreno. I’m a Computer Science graduate student at UTRGV with
+            experience in teaching, research, student support, and software development.
+            My interests include machine learning, graph theory, neuroscience applications,
+            and projects that solve real problems.
+        </p>
+        <div class="button-group">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+        </div>
+    </section>
 
-        <section class="card">
-            <h2>What I Do</h2>
-            <ul>
-                <li>Teach and mentor students in Computer Science</li>
-                <li>Work on research involving brain networks and machine learning</li>
-                <li>Build projects in Python, C++, React, Unity, and more</li>
-                <li>Create study materials and presentations for student success</li>
-            </ul>
-        </section>
+    <section class="section">
+        <h2>What I Do</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Teaching</h3>
+                <p>
+                    Create teaching materials, mentor students, and support learning in computer science
+                    through lectures, study guides, and hands-on explanations.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Research</h3>
+                <p>
+                    Work with brain connectivity data, graph-based features, and machine learning models
+                    to study meaningful patterns in neurological data.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Development</h3>
+                <p>
+                    Build projects in Python, C++, React, Unity, and other tools, with interests ranging
+                    from AI to game development and data-driven applications.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <section class="card">
-            <h2>Skills</h2>
-            <p>
-                Python, C++, Java, SQL, React, Unity, Rust, C#, Blender, Machine Learning,
-                Graph-Based Analysis, Data Organization, Teaching, Research
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>Resume</h2>
-            <p>You can add your PDF resume to this repository and link it here.</p>
-            <a class="button" href="resume.pdf" target="_blank">Download Resume</a>
-        </section>
-    </main>
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Unity</span>
+            <span class="skill-pill">Rust</span>
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Graph Theory</span>
+            <span class="skill-pill">Research</span>
+            <span class="skill-pill">Teaching</span>
+            <span class="skill-pill">Data Analysis</span>
+        </div>
+    </section>
 
     <footer>
         <p>© 2026 Alissen Moreno</p>
