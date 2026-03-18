@@ -1,40 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Pinyon+Script&family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-    line-height: 1.6;
-}
-
-a {
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #7dd3fc;
-}
-
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #F9F7F2;
+    color: #4A4E5A;
+    line-height: 1.6;
+}
+
+a {
+    color: #6B9FBF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5C8CB5;
+}
+
 nav {
     width: 100%;
-    background: rgba(15, 23, 42, 0.98);
-    border-bottom: 1px solid #1e293b;
+    background: rgba(250, 248, 243, 0.95);
+    border-bottom: 2px solid #8DA3C1;
     padding: 18px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
@@ -46,19 +48,17 @@ nav {
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: #f8fafc;
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #4A4E5A;
+    font-family: "Pinyon Script", cursive;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .logo:hover {
     transform: scale(1.05);
+    color: #8DA3C1;
 }
 
 .nav-links a {
@@ -67,12 +67,14 @@ nav {
     transition: 0.3s ease;
     position: relative;
     padding: 8px 12px;
-    border-radius: 8px;
+    border-radius: 0;
+    color: #4A4E5A;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover {
-    background: rgba(56, 189, 248, 0.15);
-    color: #7dd3fc;
+    color: #8DA3C1;
+    border-bottom: 2px solid #8DA3C1;
 }
 
 .hero {
@@ -87,21 +89,25 @@ nav {
 
 .hero h1 {
     font-size: 3.5rem;
-    color: #f8fafc;
+    color: #4A4E5A;
     margin-bottom: 16px;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .hero h2 {
     font-size: 1.4rem;
     font-weight: 400;
-    color: #94a3b8;
+    color: #8DA3C1;
     margin-bottom: 24px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .hero p {
     max-width: 700px;
     font-size: 1.05rem;
-    color: #cbd5e1;
+    color: #4A4E5A;
     margin-bottom: 30px;
 }
 
@@ -114,7 +120,7 @@ nav {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    border-radius: 10px;
+    border-radius: 0;
     font-weight: 600;
     transition: all 0.3s ease;
     border: none;
@@ -123,6 +129,7 @@ nav {
     position: relative;
     overflow: hidden;
     margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .btn::before {
@@ -144,41 +151,60 @@ nav {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-    color: #0f172a;
-    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+    background: #8DA3C1;
+    color: #F9F7F2;
+    box-shadow: 0 4px 15px rgba(141, 163, 193, 0.2);
+    border: 2px solid #8DA3C1;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #7dd3fc, #38bdf8);
-    color: #0f172a;
+    background: #5C6C8B;
+    border-color: #5C6C8B;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 8px 25px rgba(92, 108, 139, 0.3);
 }
 
 .btn-secondary {
-    border: 2px solid #38bdf8;
-    color: #38bdf8;
+    border: 2px solid #8DA3C1;
+    color: #8DA3C1;
+    background: transparent;
 }
 
 .btn-secondary:hover {
-    background: rgba(56, 189, 248, 0.1);
-    border-color: #7dd3fc;
-    color: #7dd3fc;
+    background: rgba(92, 108, 139, 0.15);
+    border-color: #5C6C8B;
+    color: #5C6C8B;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 8px 25px rgba(92, 108, 139, 0.25);
+}
+
+.section, .card, .page-header, .contact-box {
+    border: 1px solid #8DA3C1;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #8DA3C1;
+    transition: all 0.2s ease-in-out;
+}
+
+.section:hover, .card:hover, .page-header:hover, .contact-box:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #8DA3C1;
 }
 
 .section {
     max-width: 1100px;
     margin: 0 auto;
     padding: 60px 40px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .section h2 {
     font-size: 2rem;
     margin-bottom: 25px;
-    color: #f8fafc;
+    color: #4A4E5A;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .grid {
@@ -188,11 +214,8 @@ nav {
 }
 
 .card {
-    background: linear-gradient(135deg, #111827, #0f172a);
-    border: 1px solid #1f2937;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
     padding: 28px;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 }
@@ -204,7 +227,7 @@ nav {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(141, 163, 193, 0.1), transparent);
     transition: left 0.5s ease;
 }
 
@@ -212,21 +235,16 @@ nav {
     left: 100%;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    border-color: #38bdf8;
-    box-shadow: 0 12px 40px rgba(56, 189, 248, 0.15);
-}
-
 .card h3 {
-    color: #f8fafc;
+    color: #4A4E5A;
     margin-bottom: 12px;
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
 .card p {
-    color: #cbd5e1;
+    color: #4A4E5A;
     font-size: 0.98rem;
     position: relative;
     z-index: 1;
@@ -239,20 +257,22 @@ nav {
 }
 
 .skill-pill {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    color: #cbd5e1;
+    background: #FDF5E6;
+    color: #4A4E5A;
     padding: 10px 14px;
-    border-radius: 999px;
+    border-radius: 0;
     font-size: 0.95rem;
-    border: 1px solid #334155;
+    border: 2px solid #8DA3C1;
     transition: all 0.3s ease;
     cursor: default;
+    font-weight: 500;
 }
 
 .skill-pill:hover {
-    border-color: #38bdf8;
-    color: #38bdf8;
-    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+    border-color: #5C6C8B;
+    color: #5C6C8B;
+    background: rgba(92, 108, 139, 0.15);
+    box-shadow: 0 6px 16px rgba(92, 108, 139, 0.25);
     transform: translateY(-2px);
 }
 
@@ -260,29 +280,36 @@ nav {
     max-width: 1100px;
     margin: 0 auto;
     padding: 80px 40px 30px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .page-header h1 {
     font-size: 3rem;
-    color: #f8fafc;
+    color: #4A4E5A;
     margin-bottom: 10px;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .page-header p {
-    color: #94a3b8;
+    color: #8DA3C1;
     font-size: 1.05rem;
 }
 
 .contact-box {
     max-width: 800px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px;
 }
 
 footer {
     text-align: center;
     padding: 30px 20px;
     margin-top: 40px;
-    border-top: 1px solid #1e293b;
-    color: #64748b;
+    border-top: 2px solid #8DA3C1;
+    color: #8DA3C1;
     font-size: 0.95rem;
 }
 
@@ -302,7 +329,8 @@ footer {
 
     .hero,
     .section,
-    .page-header {
+    .page-header,
+    .contact-box {
         padding-left: 20px;
         padding-right: 20px;
     }
